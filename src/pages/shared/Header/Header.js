@@ -16,6 +16,7 @@ const Header = () => {
                             <Nav.Link as={Link} to="/labtest">LAB TEST</Nav.Link>
                             <Nav.Link as={Link} to="/specialities">SPECIALITIES</Nav.Link>
                             <Nav.Link as={Link} to="/about">ABOUT</Nav.Link>
+                            <Nav.Link as={Link} to="/register">REGISTER</Nav.Link>
                             {/* {!user?.email ?
                                 <>
                                     <Nav.Link as={Link} to="/register">REGISTER</Nav.Link>

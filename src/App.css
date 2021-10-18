@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+h2 {
+  font-family: 'Rakkas', cursive;
+  color: #e84242;
+  font-size: 48px !important;
+}

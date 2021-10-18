@@ -1,0 +1,40 @@
+.registration-section {
+    font-family: 'IBM Plex Serif', serif;
+}
+.registration-section .registration-form {
+    width: 400px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px #95979d;
+    margin: auto;
+}
+.registration-form h2 {
+    font-size: 39px !important;
+}
+.registration-section .sign-in-btn.facebok-login {
+    background-color: #4267b2;
+    color: #fff;
+}
+.registration-section .sign-in-btn {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 19px;
+    cursor: pointer;
+}
+.registration-section .sign-img img{
+    width: 30px;
+}
+.registration-section .login-btn {
+    background-color: #e84242;
+    border: 1px solid #e84242;
+
+}
+.registration-section .login-btn:hover,.registration-section .login-btn:focus {
+    background-color: #c12929ed;
+    border: 1px solid #dd3d3ded;
+}
