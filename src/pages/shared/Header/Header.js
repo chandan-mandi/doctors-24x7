@@ -13,7 +13,9 @@ const Header = () => {
             <Navbar bg="dark" collapseOnSelect expand="lg" variant="dark" sticky="top">
                 <Container>
                     <Navbar.Brand as={Link} to="/home">
-                        <img src={logo} alt="" />
+                        <div className="nav-logo">
+                        Doctors-24x7
+                        </div>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
