@@ -41,3 +41,23 @@ h2 {
   color: #e84242;
   font-size: 48px !important;
 }
+h3 {
+  font-family: 'IBM Plex Serif', serif;
+}
+.loading-spinner .spinner-border {
+  height: 70px !important;
+  width: 70px !important;
+  border: .75em solid currentColor !important;
+  border-right-color: transparent !important;
+}
+.loading-spinner {
+  padding: 80px 0;
+}
+.navbar .user-photo img {
+  border-radius: 50%;
+  height: 37px;
+}
+.navbar .user-photo .btn {
+  padding: 0 14px;
+  line-height: 18px;
+}

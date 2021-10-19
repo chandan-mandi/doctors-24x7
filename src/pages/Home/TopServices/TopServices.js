@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { DoctorsDbProvider } from '../../../App';
@@ -7,8 +7,12 @@ import useDoctorsdb from '../../../hooks/useDoctorsdb';
 import './TopServices.css';
 
 const TopServices = () => {
-    const doctors = useDb();
-    console.log(doctors);
+    const [doctors,setDoctors] = useState([]);
+    useEffect(() => {
+        fetch('/doctorsdb.json')
+        .then(res => res.json())
+        .then(data => setDoctors(data))
+    },[])
     const filteredDermatology = doctors?.find(d => d?.specialty === 'Dermatologist')
     const filteredGeneralPhysician = doctors.find(d => d.specialty === "General Physician")
     const filteredPaediatrist = doctors.find(d => d.specialty === "Paediatrics")
@@ -19,7 +23,7 @@ const TopServices = () => {
     return (
         <div className="top-services bg-light py-5">
             <Container>
-                <h2>Our Top Specialties</h2>
+                <h2 className="text-center">Our Medical Services</h2>
                 <Row>
                     { // Dermatology section
                         <Col lg={4} md={6} sm={12}>

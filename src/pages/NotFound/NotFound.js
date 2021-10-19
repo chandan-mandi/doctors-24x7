@@ -7,7 +7,7 @@ const NotFound = () => {
             <Container style={{margin:"50px 0"}}>
                 <Row style={{alignItems:"center"}}>
                     <Col md={6} sm={12}>
-                        <img src="https://icedrive.net/0/6aGToLUPjM" alt="" style={{float: "right"}} />
+                        <img src="https://billi4you.com/wp-content/themes/eduma/images/image-404.jpg" alt="" style={{float: "right"}} />
                     </Col>
                     <Col md={6} sm={12}>
                         <h1 style={{fontWeight:"700", fontSize:"48px"}}>404 <span style={{color: "#ff7d05"}}>EROR</span></h1>

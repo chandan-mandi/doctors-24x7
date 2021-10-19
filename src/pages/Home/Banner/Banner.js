@@ -16,17 +16,20 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Row>
-                            <Col sm={5}>
-                            </Col>
-                            
-                        <Carousel.Caption className="first-slide">
                         <Col sm={5}>
-                                <h5>Sweet and Spicy Peparoni</h5>
+                        </Col>
+
+                        <Carousel.Caption className="first-slide">
+                            <Col sm={5}>
+                                <h5>Get India's Best Health Care</h5>
                                 <div>
-                                    <p>100 % Grass-fed beef patty, cheddar cheese, special sauce, tomato, pickles, lettuce, sesame seed bun</p>
+                                    <p>
+                                        Always caring about your health, we are here to help you!
+                                        You have a beautiful heart. Take good care of it.
+                                    </p>
                                     <Button variant="warning">Book Appointment</Button>
                                 </div>
-                        </Col>
+                            </Col>
                         </Carousel.Caption>
                     </Row>
                 </Carousel.Item>
@@ -39,9 +42,12 @@ const Banner = () => {
                     <Row>
                         <Carousel.Caption className="">
                             <Col sm={5}>
-                                <h5>Sweet and Spicy Peparoni</h5>
+                                <h5>Premium Health Problem</h5>
                                 <div>
-                                    <p>100 % Grass-fed beef patty, cheddar cheese, special sauce, tomato, pickles, lettuce, sesame seed bun</p>
+                                    <p>
+                                        Always caring about your health, we are here to help you!
+                                        You have a beautiful heart. Take good care of it.
+                                    </p>
                                     <Button variant="success">Book Appointment</Button>
                                 </div>
                             </Col>
@@ -58,9 +64,12 @@ const Banner = () => {
                     <Row>
                         <Carousel.Caption className="">
                             <Col sm={5}>
-                                <h5>Sweet and Spicy Peparoni</h5>
+                                <h5>Homecare Brings You</h5>
                                 <div>
-                                    <p>100 % Grass-fed beef patty, cheddar cheese, special sauce, tomato, pickles, lettuce, sesame seed bun</p>
+                                    <p>
+                                        Always caring about your health, we are here to help you!
+                                        You have a beautiful heart. Take good care of it.
+                                    </p>
                                     <Button variant="primary">Book Appointment</Button>
                                 </div>
                             </Col>

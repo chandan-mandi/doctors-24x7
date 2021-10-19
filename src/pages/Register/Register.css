@@ -38,3 +38,16 @@
     background-color: #c12929ed;
     border: 1px solid #dd3d3ded;
 }
+.register-login-toggle button {
+    border: none;
+    background: none;
+    color: #e84242;
+    margin: 0 10px;
+    padding: 0;
+}
+.register-login-toggle button:hover {
+    border-bottom: 1px solid #e84242; 
+}
+.register-login-toggle {
+    align-items: flex-start;
+}

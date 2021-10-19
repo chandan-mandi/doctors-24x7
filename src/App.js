@@ -14,6 +14,10 @@ import Specialty from './pages/Specialty/Specialty';
 import AuthProvider from './AuthoProvider/AuthProvider';
 import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
+import UserDetails from './pages/UserDetails/UserDetails';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
+import Footer from './pages/shared/Footer/Footer';
+import Contact from './pages/Contact/Contact';
 
 
 function App() {
@@ -47,19 +51,29 @@ function App() {
               <Route exact path="/specialities">
                 <Specialities></Specialities>
               </Route>
-              <Route exact path="/specialities/:specialty">
+              <PrivateRoute exact path="/specialities/:specialty">
                 <Specialty></Specialty>
-              </Route>
+              </PrivateRoute>
               <Route path="/about">
                 <About></About>
               </Route>
+              <Route path="/contact">
+                <Contact></Contact>
+              </Route>
               <Route path="/register">
+                <Register></Register>
+              </Route>
+              <Route pat="/login">
                 <Login></Login>
+              </Route>
+              <Route path="/userDetails">
+                <UserDetails></UserDetails>
               </Route>
               <Route path="*">
                 <NotFound></NotFound>
               </Route>
             </Switch>
+            <Footer></Footer>
           </Router>
         </DoctorsDbProvider>
       </AuthProvider>

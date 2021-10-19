@@ -1,0 +1,10 @@
+.our-facilities {
+    font-family: 'IBM Plex Serif', serif;
+}
+.our-facilities .facilitiy-icon {
+    font-size: 50px;
+    color: #dc3545;
+}
+.our-facilities p {
+    color : #7b7d85;
+}

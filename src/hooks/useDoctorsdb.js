@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react"
 
 const useDoctorsdb = () => {
-    const [isLoading, setIsLoading] = useState(true);
     const [doctorsdb, setDoctors] = useState([]);
     useEffect(() => {
-        setIsLoading(true)
+        // setIsLoading(true)
         fetch('./doctorsdb.json')
             .then(res => res.json())
             .then(data => setDoctors(data))
-            setIsLoading(false)
+            // setIsLoading(false)
     }, [])
 
     return doctorsdb;

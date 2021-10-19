@@ -8,6 +8,11 @@
     font-size: 68px;
     font-weight: 700;
     font-family: 'IBM Plex Serif', serif;
+    color: #fb3548;
+}
+.carousel-caption p {
+    padding: 5px;
+    font-weight: 500;
 }
 .carousel-caption .btn {
     font-weight: 700;
@@ -20,4 +25,30 @@
 .carousel-caption.first-slide {
     left: 50% !important;
     top: 22%;
+}
+.carousel-caption.first-slide button {
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-inner {
+        height: 300px;
+    }
+    .carousel-caption, 
+    .carousel-caption.first-slide {
+        left: 0 !important;
+        top: 40% !important;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        display: none !important; 
+    }
+    .carousel-caption h5 {
+        font-size: 22px;
+    }
+    .carousel-caption p {
+        font-size: 12px;
+    }
+    .carousel-caption .btn {
+        font-size: 12px;
+    }
 }
