@@ -6,7 +6,7 @@ export const AuthContext = createContext();
 
 const AuthProvider = ({children}) => {
     const allAuthContext = useFirebase();
-    console.log(allAuthContext);
+    // console.log(allAuthContext);
     return (
         <AuthContext.Provider value={allAuthContext}>
             {children}

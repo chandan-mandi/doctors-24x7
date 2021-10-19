@@ -3,7 +3,7 @@ import useDoctorsdb from '../hooks/useDoctorsdb';
 export const DoctorDbContext = createContext();
 const DoctorsDbProvider = ({children}) => {
     const doctorsdb = useDoctorsdb();
-    console.log(doctorsdb);
+    // console.log(doctorsdb);
     return (
         <DoctorDbContext.Provider value={doctorsdb}>
             {children}

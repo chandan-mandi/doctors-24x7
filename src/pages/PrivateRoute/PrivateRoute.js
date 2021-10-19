@@ -4,7 +4,7 @@ import { Redirect, Route } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 const PrivateRoute = ({children, ...rest}) => {
-    console.log({...rest});
+    // console.log({...rest});
     const {user, isLoading} = useAuth();
     if(isLoading) {
         return <div className="text-center loading-spinner">
