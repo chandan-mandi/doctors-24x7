@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel, Col, Row, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import slide1 from '../../../img/doctors/slide1.jpg';
 import slide2 from '../../../img/doctors/slide2.jpg';
 import slide3 from '../../../img/doctors/slide3.jpg';
@@ -27,7 +28,7 @@ const Banner = () => {
                                         Always caring about your health, we are here to help you!
                                         You have a beautiful heart. Take good care of it.
                                     </p>
-                                    <Button variant="warning">Book Appointment</Button>
+                                    <Button as={Link} to="/appointment" variant="warning">Book Appointment</Button>
                                 </div>
                             </Col>
                         </Carousel.Caption>
@@ -48,7 +49,7 @@ const Banner = () => {
                                         Always caring about your health, we are here to help you!
                                         You have a beautiful heart. Take good care of it.
                                     </p>
-                                    <Button variant="success">Book Appointment</Button>
+                                    <Button as={Link} to="/appointment" variant="success">Book Appointment</Button>
                                 </div>
                             </Col>
                         </Carousel.Caption>
@@ -70,7 +71,7 @@ const Banner = () => {
                                         Always caring about your health, we are here to help you!
                                         You have a beautiful heart. Take good care of it.
                                     </p>
-                                    <Button variant="primary">Book Appointment</Button>
+                                    <Button as={Link} to="/appointment" variant="primary">Book Appointment</Button>
                                 </div>
                             </Col>
                         </Carousel.Caption>

@@ -1,5 +1,8 @@
+import { faRupeeSign } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row, Spinner } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import useDb from '../../hooks/usedb';
 import './Doctors.css'
@@ -35,8 +38,10 @@ const Doctors = () => {
                                                 </div>
                                             }
                                             <h6>Specialists for {doctor.specilistsFor}</h6>
-                                            <p>{doctor.symtoms1}{doctor.symtoms2}</p>
-                                            <a href="#">Book Appointment</a>
+                                            <div className="fees">
+                                            <p>Fees: <span className="icon"><FontAwesomeIcon icon={faRupeeSign}/></span> {doctor.fees}</p>
+                                            </div>
+                                            <Link to="/appointment">Book Appointment</Link>
                                         </div>
                                     </div>
                                 </div>
