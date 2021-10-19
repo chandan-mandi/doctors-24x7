@@ -52,7 +52,7 @@ function App() {
               <Route path="/appointment">
                 <Appointment></Appointment>
               </Route>
-              <PrivateRoute exact path="/specialities/:specialty">
+              <PrivateRoute path="/specialities/:specialty">
                 <Specialty></Specialty>
               </PrivateRoute>
               <Route path="/about">
@@ -64,13 +64,13 @@ function App() {
               <Route path="/register">
                 <Register></Register>
               </Route>
-              <Route pat="/login">
+              <Route path="/login">
                 <Login></Login>
               </Route>
               <Route path="/userDetails">
                 <UserDetails></UserDetails>
               </Route>
-              <Route path="*">
+              <Route exact path="*">
                 <NotFound></NotFound>
               </Route>
             </Switch>
