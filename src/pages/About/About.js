@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Row, Button } from 'react-bootstrap';
 import './About.css';
+import doctor from '../../img/doctors/doctor.png';
 
 const About = () => {
     return (
@@ -40,7 +41,7 @@ const About = () => {
                 </Col>
                 <Col lg={4} sm={12} className="px-3">
                     <div className="about-desc-img">
-                        <img src="http://html.kodesolution.live/html/health-beauty/medical/medinova-html/v3.2/demo/images/photos/doctor.png" alt="" />
+                        <img src={doctor} alt="" />
                     </div>
                 </Col>
             </Row>

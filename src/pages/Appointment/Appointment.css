@@ -1,0 +1,9 @@
+.appointment-section {
+    background-color: #F1F7FA;
+}
+.appointment-section .appointment-form {
+    border-radius: 5px;
+}
+.appointment-section .img-fluid {
+    height: 650px !important;
+}

@@ -1,8 +1,11 @@
 .registration-section {
     font-family: 'IBM Plex Serif', serif;
 }
+.register-loading{
+    text-align: center;
+}
 .registration-section .registration-form {
-    width: 400px;
+    width: 385px;
     border-radius: 4px;
     box-shadow: 0 0 8px #95979d;
     margin: auto;

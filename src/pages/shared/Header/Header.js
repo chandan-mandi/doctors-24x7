@@ -4,6 +4,7 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import logo from '../../../img/ICON/doctor247-logo.png';
 
 const Header = () => {
     const { user, logout } = useAuth();
@@ -11,14 +12,16 @@ const Header = () => {
         <>
             <Navbar bg="dark" collapseOnSelect expand="lg" variant="dark" sticky="top">
                 <Container>
-                    <Navbar.Brand as={Link} to="/home">Doctors-247</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/home">
+                        <img src={logo} alt="" />
+                    </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav className="">
                             <Nav.Link as={Link} to="/home">HOME</Nav.Link>
                             <Nav.Link as={Link} to="/doctors">DOCTORS</Nav.Link>
-                            <Nav.Link as={Link} to="/labtest">LAB TEST</Nav.Link>
-                            <Nav.Link as={Link} to="/specialities">SPECIALITIES</Nav.Link>
+                            <Nav.Link as={Link} to="/news">NEWS</Nav.Link>
+                            <Nav.Link as={Link} to="/appointment">APPOINTMENT</Nav.Link>
                             <Nav.Link as={Link} to="/about">ABOUT</Nav.Link>
                             <Nav.Link as={Link} to="/contact">CONTACT</Nav.Link>
                             {/* <Nav.Link as={Link} to="/register">REGISTER</Nav.Link> */}

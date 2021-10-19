@@ -23,7 +23,9 @@ const TopServices = () => {
     return (
         <div className="top-services bg-light py-5">
             <Container>
+                <div className="h-text">
                 <h2 className="text-center">Our Medical Services</h2>
+                </div>
                 <Row>
                     { // Dermatology section
                         <Col lg={4} md={6} sm={12}>

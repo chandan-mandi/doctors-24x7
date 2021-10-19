@@ -87,7 +87,9 @@ const Register = () => {
 
     return (
         <div className="container py-5 registration-section">
-            <h2>{user?.displayName} {!isLoading ? '' : <Spinner animation="border" variant="danger" />}</h2>
+            <div className="register-loading">
+            {user?.displayName} {!isLoading ? "loading" : <Spinner animation="border" variant="danger" />}
+            </div>
             {!user?.email ?
                 <div className="p-5 registration-form">
                 <h2>{isLogin ? 'Join': 'Sign'} In To Green Chilli</h2>

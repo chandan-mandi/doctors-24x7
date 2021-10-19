@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Header from './pages/shared/Header/Header';
 import Doctors from './pages/Doctors/Doctors';
-import LabTest from './pages/LabTest/LabTest';
 import Specialities from './pages/Specialities/Specialities';
 import About from './pages/About/About';
 import NotFound from './pages/NotFound/NotFound';
@@ -18,6 +17,8 @@ import UserDetails from './pages/UserDetails/UserDetails';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import Footer from './pages/shared/Footer/Footer';
 import Contact from './pages/Contact/Contact';
+import News from './pages/News/News';
+import Appointment from './pages/Appointment/Appointment';
 
 
 function App() {
@@ -45,11 +46,11 @@ function App() {
               <Route path="/doctors">
                 <Doctors></Doctors>
               </Route>
-              <Route path="/labtest">
-                <LabTest></LabTest>
+              <Route path="/news">
+                <News></News>
               </Route>
-              <Route exact path="/specialities">
-                <Specialities></Specialities>
+              <Route path="/appointment">
+                <Appointment></Appointment>
               </Route>
               <PrivateRoute exact path="/specialities/:specialty">
                 <Specialty></Specialty>
