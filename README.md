@@ -12,4 +12,5 @@ Live Site Link - https://doctors-247.netlify.app
 - **React, React-Router-Dom,**
 - **React-Bootstrap**
 - **CSS3**
+- **FontAwesome Icon**
 - **Firebase Authentication**
