@@ -70,3 +70,11 @@ h3 {
 .nav-logo {
   font-family: 'Rakkas', cursive;
 }
+.navbar-nav a.nav-link {
+  color: #cdcccc !important;
+  font-weight: 700;
+  font-family: fangsong;
+}
+.navbar-nav a.nav-link:focus {
+  color: #fff !important;
+}
