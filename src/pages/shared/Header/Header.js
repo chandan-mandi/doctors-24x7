@@ -32,7 +32,7 @@ const Header = () => {
                                     <Nav.Link as={Link} to="/register">REGISTER</Nav.Link>
                                     <Nav.Link as={Link} to="/login">LOGIN</Nav.Link>
                                 </>
-                                : <span className="user-photo">
+                                : <div className="user-photo">
                                     <div className="btn btn-danger me-2" onClick={logout}>
                                         <FontAwesomeIcon icon={faSignOutAlt}/>
                                         Logout
@@ -41,7 +41,7 @@ const Header = () => {
                                     </div>
                                     <Link to="/userDetails"><img src={user.photoURL} alt="" /></Link>
 
-                                </span>
+                                </div>
                             }
                         </Nav>
                         <Navbar.Text>

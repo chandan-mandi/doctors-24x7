@@ -80,7 +80,7 @@ const Login = () => {
         })
     }
     const setUserName = () => {
-        updateProfile(auth.currentUser, {photoURL: name})
+        updateProfile(auth.currentUser, {displayName: name})
         .then(result =>{       
         })
     }

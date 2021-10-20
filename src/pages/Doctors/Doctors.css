@@ -9,5 +9,18 @@
     font-weight: 700 !important;
 }
 .fees .icon {
-    font-size: 12px;
+    font-size: 16px;
+    /* color: red; */
+    /* transition: 0s; */
+}
+.specialist-experience h6{
+    text-transform: uppercase;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 13px !important;
+}
+.specialist-experience p {
+    font-family: 'IBM Plex Serif',serif;
+}
+.card:hover .icon {
+    color: #fff;
 }

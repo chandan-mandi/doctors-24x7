@@ -14,6 +14,20 @@
       "categoryIcon": "https://prodaphstorage.blob.core.windows.net/specialties/ee249e8a-950a-489c-8a33-8846889831f5.jpg"
     },
     {
+      "id": "17",
+      "name": "Anand Kalaskar",
+      "specialty": "General Physician",
+      "experience": "15",
+      "fees": "900",
+      "qualification": "MBBS, MD (Family Med)",
+      "location": "Apollo Hospitals Canal Circular Road, Kolkata",
+      "specilistsFor": "skin and hair treatments",
+      "symtoms1": "Typhoid, Abdominal Pain",
+      "symtoms2": "Migrane, Infections",
+      "photo": "https://prodaphstorage.blob.core.windows.net/doctors/699cec20-55fe-4929-a9c3-20ce2eac899f.-Anand-Kalaskar_420x420",
+      "categoryIcon": "https://newassets.apollo247.com/specialties/ic_general_medicine.png"
+    },
+    {
       "id": "2",
       "name": "Sandip Agnihotri",
       "specialty": "Dermatologist",
@@ -133,7 +147,7 @@
     {
       "id": "11",
       "name": "Dhanraj K",
-      "specialty": "General Physician/ Internal Medicine Specialist",
+      "specialty": "General Physician",
       "experience": "21",
       "fees": "1000",
       "qualification": "MBBS, MD (Gen.Med)",
@@ -226,20 +240,6 @@
       "symtoms1": "Typhoid, Abdominal Pain",
       "symtoms2": "Migrane, Infections",
       "photo": "https://newassets.apollo247.com/doctors/6adfcea7-755e-40cc-9cba-a7d1286eb819.jpg",
-      "categoryIcon": "https://newassets.apollo247.com/specialties/ic_general_medicine.png"
-    },
-    {
-      "id": "17",
-      "name": "Anand Kalaskar",
-      "specialty": "General Physician",
-      "experience": "15",
-      "fees": "900",
-      "qualification": "MBBS, MD (Family Med)",
-      "location": "Apollo Hospitals Canal Circular Road, Kolkata",
-      "specilistsFor": "skin and hair treatments",
-      "symtoms1": "Typhoid, Abdominal Pain",
-      "symtoms2": "Migrane, Infections",
-      "photo": "https://prodaphstorage.blob.core.windows.net/doctors/699cec20-55fe-4929-a9c3-20ce2eac899f.-Anand-Kalaskar_420x420",
       "categoryIcon": "https://newassets.apollo247.com/specialties/ic_general_medicine.png"
     },
     {

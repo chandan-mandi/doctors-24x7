@@ -1,3 +1,5 @@
+import { faRupeeSign } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import { useParams } from 'react-router';
@@ -32,10 +34,27 @@ const Specialty = () => {
                                                     {/* <h3>01</h3> */}
                                                     <h4>{doctor?.name}</h4>
                                                     <img src={doctor?.photo} alt="" />
-
-                                                    <h6>Specialists for {doctor?.specilistsFor}</h6>
-                                                    <p>{doctor?.symtoms1}{doctor?.symtoms2}</p>
-                                                    <Link to="/">Book Appointment</Link>
+                                                    {/* <h6>Specialists for {doctor?.specilistsFor}</h6>
+                                                    <p>{doctor?.symtoms1}{doctor?.symtoms2}</p> */}
+                                                    <div className="specialist-experience">
+                                                <Row>
+                                                    <Col lg={7} sm={12}>
+                                                        <div className="specialist">
+                                                            <h6>{doctor.specialty} Specialist</h6>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={5} sm={12}>
+                                                        <div className="experience">
+                                                            <h6>| {doctor.experience} yrs exp.</h6>
+                                                        </div>
+                                                    </Col>
+                                                </Row>
+                                                <h6>{doctor.qualification}</h6>
+                                            <div className="fees">
+                                                <p>You Pay <span className="icon"><FontAwesomeIcon icon={faRupeeSign} /></span>{doctor.fees}</p>
+                                            </div>
+                                            </div>
+                                                    <Link to="/appointment">Book Appointment</Link>
                                                 </div>
                                             </div>
                                         </div>

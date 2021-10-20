@@ -9,12 +9,12 @@ import './Doctors.css'
 
 const Doctors = () => {
     // const doctors = useDb();
-    const [doctors,setDoctors] = useState([]);
+    const [doctors, setDoctors] = useState([]);
     useEffect(() => {
         fetch('/doctorsdb.json')
-        .then(res => res.json())
-        .then(data => setDoctors(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setDoctors(data))
+    }, [])
     const { isLoading } = useAuth();
     return (
         <div className="top-services doctors-section bg-light py-5">
@@ -29,7 +29,6 @@ const Doctors = () => {
                                         <div className="content">
                                             {/* <h3>01</h3> */}
                                             <h4>{doctor.name}</h4>
-
                                             {!isLoading ?
                                                 <img src={doctor.photo} alt="" />
                                                 :
@@ -37,9 +36,23 @@ const Doctors = () => {
                                                     <Spinner animation="grow" variant="danger" />
                                                 </div>
                                             }
-                                            <h6>Specialists for {doctor.specilistsFor}</h6>
+                                            <div className="specialist-experience">
+                                                <Row>
+                                                    <Col lg={7} sm={12}>
+                                                        <div className="specialist">
+                                                            <h6>{doctor.specialty} Specialist</h6>
+                                                        </div>
+                                                    </Col>
+                                                    <Col lg={5} sm={12}>
+                                                        <div className="experience">
+                                                            <h6>| {doctor.experience} yrs exp.</h6>
+                                                        </div>
+                                                    </Col>
+                                                </Row>
+                                                <h6>{doctor.qualification}</h6>
                                             <div className="fees">
-                                            <p>Fees: <span className="icon"><FontAwesomeIcon icon={faRupeeSign}/></span> {doctor.fees}</p>
+                                                <p>You Pay <span className="icon"><FontAwesomeIcon icon={faRupeeSign} /></span>{doctor.fees}</p>
+                                            </div>
                                             </div>
                                             <Link to="/appointment">Book Appointment</Link>
                                         </div>
